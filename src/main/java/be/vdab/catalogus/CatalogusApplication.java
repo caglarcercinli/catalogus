@@ -11,9 +11,8 @@ public class CatalogusApplication {
     public static void main(String[] args) {
         SpringApplication.run(CatalogusApplication.class, args);
     }
-    @Bean
-    Jackson2JsonMessageConverter converter(){
+    @Bean Jackson2JsonMessageConverter converter() {
         return new Jackson2JsonMessageConverter();
     }
-
 }
+
